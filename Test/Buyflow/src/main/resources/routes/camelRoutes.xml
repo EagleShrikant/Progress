@@ -5,7 +5,8 @@
 		   	<choice>
 		    <when>
 				<simple>${in.header.Content-Type} == 'application/json'</simple>
-				<unmarshal ref="NEWVOIPINTERENTINDIRECTV2HSIANewJSON"/>
+				<unmarshal ref="NEWVOIPI
+				NTERENTINDIRECTV2HSIANewJSON"/>
 			</when>
 			<otherwise>
 		    	<unmarshal ref="NEWVOIPINTERENTINDIRECTV2HSIANewXML" /> 
