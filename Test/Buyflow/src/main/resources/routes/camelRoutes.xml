@@ -1,0 +1,30 @@
+<routes xmlns="http://camel.apache.org/schema/spring">
+		
+		<route id="test-route">
+		    <from uri="servlet:/service/testURL?httpMethodRestrict=POST;matchOnUriPrefix=true"/>		  
+		   	<choice>
+		    <when>
+				<simple>${in.header.Content-Type} == 'application/json'</simple>
+				<unmarshal ref="NEWVOIPINTERENTINDIRECTV2HSIANewJSON"/>
+			</when>
+			<otherwise>
+		    	<unmarshal ref="NEWVOIPINTERENTINDIRECTV2HSIANewXML" /> 
+		    </otherwise>
+		    </choice>
+		   
+            <to uri="bean:testservice?method=testMethod"/>
+            
+            <choice>
+		    <when>
+				<simple>${in.header.Content-Type} == 'application/json'</simple>
+				<marshal ref="NEWVOIPINTERENTINDIRECTV2HSIANewJSON"/>
+			</when>
+			<otherwise>
+		    	<marshal ref="NEWVOIPINTERENTINDIRECTV2HSIANewXML" /> 
+		    </otherwise>
+		    </choice>
+		</route>
+		
+</routes>
+
+

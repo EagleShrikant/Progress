@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/context
+	        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+		<bean id="testservice"  name="testservice" class="com.att.oce.service.BuyflowServiceImpl"/>
+		
+		<bean id="restTemplate" class="org.springframework.web.client.RestTemplate" />
+
+		<bean id="testBeanRequestXML" class="org.apache.camel.model.dataformat.JaxbDataFormat">
+			<property name="prettyPrint" value="true" />
+			<property name="contextPath" value="com.att.ooce.core.ocebuyflowdatamodel" />
+			<property name="partClass" value="com.att.ooce.core.ocebuyflowdatamodel.TestBeanRequest" />
+		</bean>
+	
+		<bean id="testBeanResponseXML" class="org.apache.camel.model.dataformat.JaxbDataFormat">
+			<property name="prettyPrint" value="true" />
+			<property name="contextPath" value="com.att.ooce.core.ocebuyflowdatamodel" />
+			<property name="partClass" value="com.att.ooce.core.ocebuyflowdatamodel.TestBeanResponse" />
+		</bean>
+		
+		<bean id="testBeanRequestJSON" class="org.apache.camel.component.jackson.JacksonDataFormat">
+            <property name="unmarshalType" value="com.att.ooce.core.ocebuyflowdatamodel.TestBeanRequest" />            
+      </bean>
+      
+      <bean id="testBeanResponseJSON" class="org.apache.camel.component.jackson.JacksonDataFormat">
+            <property name="unmarshalType" value="com.att.ooce.core.ocebuyflowdatamodel.TestBeanResponse" />
+      </bean>
+      
+<!--       <bean id="standAloneDTVINDIRECTResponseXML" class="org.apache.camel.model.dataformat.JaxbDataFormat"> -->
+<!-- 			<property name="prettyPrint" value="true" /> -->
+<!-- 			<property name="contextPath" value="com.att.oce.core.test" /> -->
+<!-- 			<property name="partClass" value="com.att.oce.core.test.StandAloneDTVINDIRECTResponse" /> -->
+<!-- 		</bean> -->
+		
+<!-- 		<bean id="standAloneDTVINDIRECTResponseJSON" class="org.apache.camel.component.jackson.JacksonDataFormat"> -->
+<!--             <property name="unmarshalType" value="com.att.oce.core.test.StandAloneDTVINDIRECTResponse" />             -->
+<!--       </bean> -->
+      
+<!--       <bean id="standAloneDTVINDIRECTResponseXML" class="org.apache.camel.model.dataformat.JaxbDataFormat"> -->
+<!-- 			<property name="prettyPrint" value="true" /> -->
+<!-- 			<property name="contextPath" value="generated" /> -->
+<!-- 			<property name="partClass" value="generated.StandAloneDTVINDIRECTResponse" /> -->
+<!-- 		</bean> -->
+		
+<!-- 		<bean id="standAloneDTVINDIRECTResponseJSON" class="org.apache.camel.component.jackson.JacksonDataFormat"> -->
+<!--             <property name="unmarshalType" value="generated.StandAloneDTVINDIRECTResponse" />             -->
+<!--       </bean> -->
+      
+       <bean id="NEWVOIPINTERENTINDIRECTV2HSIANewXML" class="org.apache.camel.model.dataformat.JaxbDataFormat">
+			<property name="prettyPrint" value="true" />
+			<property name="contextPath" value="generated" />
+			<property name="partClass" value="generated.NEWVOIPINTERENTINDIRECTV2HSIANew" />
+		</bean>
+		
+		<bean id="NEWVOIPINTERENTINDIRECTV2HSIANewJSON" class="org.apache.camel.component.jackson.JacksonDataFormat">
+            <property name="unmarshalType" value="generated.NEWVOIPINTERENTINDIRECTV2HSIANew" />            
+      </bean>
+      
+</beans>  

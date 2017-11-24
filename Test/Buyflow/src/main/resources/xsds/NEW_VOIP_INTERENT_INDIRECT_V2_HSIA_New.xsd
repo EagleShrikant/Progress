@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Tue Nov 14 2017 15:33:39 GMT+0530 (India Standard Time) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="NEW_VOIP_INTERENT_INDIRECT_V2_HSIA_New">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="event">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="eventId" type="xs:string"></xs:element>
+                                             <xs:element name="eventType" type="xs:string"></xs:element>
+                                             <xs:element name="emailAddress" type="xs:string"></xs:element>
+                                             <xs:element name="eventCategory" type="xs:string"></xs:element>
+                                             <xs:element name="entity" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="data">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="order">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="satelliteTVOnlySingleDispatchEligibleIndicator" type="xs:string"></xs:element>
+                                                               <xs:element name="orderType" type="xs:string"></xs:element>
+                                                               <xs:element name="isCommonOrder" type="xs:string"></xs:element>
+                                                               <xs:element name="addresses">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="address" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="unparsedAddress">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="zip" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="country" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="city" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="county" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="addressLine1" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="addressLine2"></xs:element>
+                                                                                                                     <xs:element name="state" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="additionalDetails">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="additionalDetail" maxOccurs="unbounded">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="code" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="type" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="value" type="xs:string"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="parsedAddress">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="zip" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="videoHubOffice" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="streetType" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="city" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="county" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="country" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="smartMoves" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="houseNumberPrefix"></xs:element>
+                                                                                                                     <xs:element name="linkKey" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="houseNumber" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="zipCodeExtension" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="rateCenterCode" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="tarCode" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="legalEntity" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="rateZoneBanCode" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="streetName" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="primaryNPANXX" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="clli8" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="zipGeoCode"></xs:element>
+                                                                                                                     <xs:element name="state" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="directionPrefix"></xs:element>
+                                                                                                                     <xs:element name="exchangeCode" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="addressStreetLine" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="streetNameSuffix" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="direction"></xs:element>
+                                                                                                                     <xs:element name="buildingType" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="addressId" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="chatId" type="xs:string"></xs:element>
+                                                               <xs:element name="totalPrice">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="price" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="currencyType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="total" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="amount" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="priceType" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="creditPolicy">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="crsmOnFlag" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="submittedDate" type="xs:string"></xs:element>
+                                                               <xs:element name="salesChannel" type="xs:string"></xs:element>
+                                                               <xs:element name="customerOrderNumber" type="xs:string"></xs:element>
+                                                               <xs:element name="termsAndConditions">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="termsAndConditionAccepted" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="agreementType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="accepted" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="version" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="timestamp" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="singleDispatchEligibleIndicator" type="xs:string"></xs:element>
+                                                               <xs:element name="lineItems">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="lineItem" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="characteristics">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="commonCharacteristics">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="requestComponentGroup"></xs:element>
+                                                                                                                                       <xs:element name="componentConfigurations" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="componentCode" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="componentMapRequiredIndicator" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="componentPath" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="attributes" maxOccurs="unbounded">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:sequence>
+                                                                                                                                                                           <xs:element name="attributeCode" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="attributeOperations" maxOccurs="unbounded">
+                                                                                                                                                                                 <xs:complexType>
+                                                                                                                                                                                       <xs:sequence>
+                                                                                                                                                                                             <xs:element name="operationNames" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                                                                                                                                       </xs:sequence>
+                                                                                                                                                                                 </xs:complexType>
+                                                                                                                                                                           </xs:element>
+                                                                                                                                                                           <xs:element name="attributeValue" type="xs:string"></xs:element>
+                                                                                                                                                                     </xs:sequence>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                         <xs:element name="componentOperations" maxOccurs="unbounded">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:sequence>
+                                                                                                                                                                           <xs:element name="operationNames" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                                                                                                                     </xs:sequence>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="ignorePricePlanCode" type="xs:string"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                                     <xs:element name="internetLineItemCharacteristics">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="overageBucketAllowance" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="bucketAllowance" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="maxOverageCharge" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="pricePerBucketAllowance" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="boltOnType" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="planDownloadSpeed" type="xs:string"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="promotionReferences">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="promotionReference" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="quantity" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="displayName" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="payments">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="payment" maxOccurs="unbounded">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="currencyType" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="amount" type="xs:int"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="billingCode" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="sequence" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="productSKU" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="productCode" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="systemName" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="locationId" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="price">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="currencyType" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="amount" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="total" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="msrp" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="priceType" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="action" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="productType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="groupReferences">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="groupReference" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="encryptedIndicator" type="xs:string"></xs:element>
+                                                               <xs:element name="geoAreaSingleDispatchAvailableIndicator" type="xs:string"></xs:element>
+                                                               <xs:element name="commonOrderIndicator" type="xs:string"></xs:element>
+                                                               <xs:element name="orderSource">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="browserId" type="xs:string"></xs:element>
+                                                                                 <xs:element name="clientType" type="xs:string"></xs:element>
+                                                                                 <xs:element name="application" type="xs:string"></xs:element>
+                                                                                 <xs:element name="channel" type="xs:string"></xs:element>
+                                                                                 <xs:element name="locale" type="xs:string"></xs:element>
+                                                                                 <xs:element name="additionalDetails">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="additionalDetail" maxOccurs="unbounded">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="code" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="value" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="salesCode" type="xs:string"></xs:element>
+                                                               <xs:element name="serviceFacilityQualifications">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="serviceFacilityQualification" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="preferredNetworkType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="addressReference" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="frequency17MhzIndicator" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="facilityCheck">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="serviceType" maxOccurs="unbounded"></xs:element>
+                                                                                                                     <xs:element name="validations" maxOccurs="unbounded">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="code" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="message" type="xs:string"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="profileCode" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="cpeRequiredIndicator" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="vectoringIndicator" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="dslAvailableIndicator" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="salesLocation" type="xs:string"></xs:element>
+                                                               <xs:element name="schedulingDetails">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="schedulingDetail" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="nameReference" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="installType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="nFFlFlag" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="actualSchedule">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="selectedAppointmentTime" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="startTime" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="endTime" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="workOrderId" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="selectedAppointmentDate" type="xs:date"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="realTimeCalendarIndicator" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="additionalDetails">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="additionalDetail" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="code" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="type" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="value" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="promotions">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="promotion" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="unitOfMeasurement" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="promotionType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="amount" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="effectiveInDays" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="promotionCode" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="promotionCycle" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="percent" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="promotionId" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="duration" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="complexDiscountIndicator" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="sequence" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="promotionName" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="displayLevel" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="baseOfferId" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="fixedAmount" type="xs:int"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="createdDate" type="xs:string"></xs:element>
+                                                               <xs:element name="names">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="name" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="firstName" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="lastName" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="emailAddress" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="primaryContactPhones" maxOccurs="unbounded">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="phoneNumber" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="contactPhoneType" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="consentDetails">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="consentDetail" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="consentSelection" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="consentType" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="consentCategory" type="xs:string"></xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="orderContact">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="nameReference" type="xs:string"></xs:element>
+                                                                                 <xs:element name="preferredContactMethod" type="xs:string"></xs:element>
+                                                                                 <xs:element name="preferredTimeOfDayForContact"></xs:element>
+                                                                                 <xs:element name="primaryEmailAddress" type="xs:string"></xs:element>
+                                                                                 <xs:element name="orderConfirmationByEmailPermissionIndicator" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="specialInstructions"></xs:element>
+                                                               <xs:element name="agentUId" type="xs:string"></xs:element>
+                                                               <xs:element name="productGroups">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="group" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="sequence" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="characteristics">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="packageCharacteristics">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="code" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="type" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="category" type="xs:string"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                                     <xs:element name="losgCharacteristics">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="accountReference" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="ecommercePartners">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="ecommercePartner" maxOccurs="unbounded">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:sequence>
+                                                                                                                                                                           <xs:element name="code" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="type" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="name" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="affiliateName" type="xs:string"></xs:element>
+                                                                                                                                                                     </xs:sequence>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="fulfillmentMethod" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="primaryIndicator" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="additionalDetails">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="additionalDetail" maxOccurs="unbounded">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:sequence>
+                                                                                                                                                                           <xs:element name="code" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="type" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="value" type="xs:string"></xs:element>
+                                                                                                                                                                     </xs:sequence>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="losgReferenceId" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="productCategory" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="installationInstructions">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="installationInstruction" maxOccurs="unbounded">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:sequence>
+                                                                                                                                                                           <xs:element name="question" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="answers" type="xs:string"></xs:element>
+                                                                                                                                                                     </xs:sequence>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="sequence" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="losgType" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="serviceQualificationReference" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="installType" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="serviceLocationReference" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="schedulingDetailReference" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="internetLOSCharacteristics">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="internetProtocolDigitalSubscriberLineAccess" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="primaryNetworkType" type="xs:string"></xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="termsAndConditionReferences">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="termsAndConditionReference" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="name" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="voipLOSCharacteristics">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="directoryListing" maxOccurs="unbounded">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:sequence>
+                                                                                                                                                                           <xs:element name="nameReference" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="omitAddressIndicator" type="xs:string"></xs:element>
+                                                                                                                                                                           <xs:element name="listing">
+                                                                                                                                                                                 <xs:complexType>
+                                                                                                                                                                                       <xs:sequence>
+                                                                                                                                                                                             <xs:element name="listingType" type="xs:string"></xs:element>
+                                                                                                                                                                                       </xs:sequence>
+                                                                                                                                                                                 </xs:complexType>
+                                                                                                                                                                           </xs:element>
+                                                                                                                                                                     </xs:sequence>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="price" maxOccurs="unbounded">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="currencyType" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="total" type="xs:int"></xs:element>
+                                                                                                                     <xs:element name="priceType" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="type" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="name" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="accounts">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="account" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="billingDeliveryPreference" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="accountSubCategory" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="accountCategory" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="cpni" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="accountSubType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="accountType" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="billingDetail" maxOccurs="unbounded">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="nameReference" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="addressReference" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="authentication">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="securityVerification">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="pin" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="securityQuestion" type="xs:string"></xs:element>
+                                                                                                                                                         <xs:element name="securityAnswer" type="xs:string"></xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="lastFourOfSSN"></xs:element>
+                                                                                                                                       <xs:element name="dob" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="ssn" type="xs:string"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="passCode" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="gigaPower" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="b2bReference" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="sequence" type="xs:int"></xs:element>
+                                                                                                   <xs:element name="creditCheck">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="creditClass" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="singleCreditQueryWirelessIndicator" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="creditCheckRanIndicator" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="safeScanPassIndicator" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="electronicIdNumber" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="creditCheckManagementTransactionId" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="safeScanAlertIndicator" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="spokenLanguagePreference" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="serviceLocationReference" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="paymentArrangement" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="id" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="langId" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="billingLanguagePreference" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
+ 
