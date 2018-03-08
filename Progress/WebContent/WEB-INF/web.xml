@@ -4,16 +4,12 @@
   <welcome-file-list>
     <welcome-file>Welcome.jsp</welcome-file>
   </welcome-file-list>
-  
-  
   <servlet>
-	<servlet-name>progress</servlet-name>
-	<servlet-class>com.shri.ProgressServlet</servlet-class>
+    <servlet-name>progress</servlet-name>
+    <servlet-class>com.shri.ProgressServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
-	<servlet-name>progress</servlet-name>
-	<url-pattern>/progressServlet</url-pattern>
+    <servlet-name>progress</servlet-name>
+    <url-pattern>/progressServlet</url-pattern>
   </servlet-mapping>
-  
 </web-app>

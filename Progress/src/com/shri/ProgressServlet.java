@@ -25,9 +25,13 @@ public class ProgressServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		 String downloadId = "longProcess_" + request.getParameter("downloadId");
-	        LongProcess longProcess = (LongProcess) request.getSession().getAttribute(downloadId);
-	        int progress = longProcess.getProgress();
+		 //String downloadId = "longProcess_" + request.getParameter("downloadId");
+	        
+		    if(null == request.getSession().getAttribute("currentProgress")){				
+				request.getSession().setAttribute("currentProgress", 0);
+			}
+		 	
+	        int progress = (int) request.getSession().getAttribute("currentProgress");
 
 	        response.setContentType("application/json");
 	        response.setCharacterEncoding("UTF-8");
